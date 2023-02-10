@@ -26,7 +26,7 @@ import axios from 'axios'
         Submits the file to the server
       */
       submitFile(){
-        console.log('teste');
+        console.log('teste novamente');
         /*
                 Initialize the form data
             */
@@ -39,7 +39,7 @@ import axios from 'axios'
 
         /*
           Make the request to the POST /single-file URL
-          
+
         */
             axios.post( '/single-file',
                 formData,
