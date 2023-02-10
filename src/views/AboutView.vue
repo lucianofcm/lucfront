@@ -20,7 +20,6 @@ import axios from 'axios'
         file: ''
       }
     },
-
     methods: {
       /*
         Submits the file to the server
