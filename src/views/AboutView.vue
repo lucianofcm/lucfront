@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-   <div class="card mb-4 border-0">
+   <div class="card messages">
     <div class="large-8 medium-8 small-8 cell">
       <label class="btn btn-default">
         <input type="file" id="file" ref="file" v-on:change="(e)=>handleFileUpload(e)"/>
@@ -72,3 +72,14 @@ import axios from 'axios'
     }
   }
 </script>
+
+<style scoped>
+.messages {
+  display: inline-block;
+  min-width: 100px;
+  width: 100%;
+  background: white;
+  padding:2px;
+  margin:3px;
+}
+</style>
