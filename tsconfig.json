@@ -1,5 +1,9 @@
 {
   "files": [],
+  "compilerOptions": {
+    "allowJs": true,
+    "moduleResolution": "node"
+  },
   "references": [
     {
       "path": "./tsconfig.config.json"
