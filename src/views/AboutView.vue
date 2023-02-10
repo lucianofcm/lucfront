@@ -1,12 +1,16 @@
 <template>
-  <div class="container">
-    <div class="large-12 medium-12 small-12 cell">
-      <label>File
+  <div class="container-fluid">
+   <div class="card">
+    <div class="large-8 medium-8 small-8 cell">
+      <label class="btn btn-default">
         <input type="file" id="file" ref="file" v-on:change="(e)=>handleFileUpload(e)"/>
       </label>
-      <button v-on:click="submitFile()">Submit</button>
+    </div>
+    <div class="col-xs-4 text-center">
+      <button class="btn btn-success" v-on:click="submitFile()">Enviar</button>
     </div>
   </div>
+</div>
 </template>
 
 <script lang="ts">
