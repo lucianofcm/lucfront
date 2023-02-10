@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-   <div class="card">
+   <div class="card mb-4 border-0">
     <div class="large-8 medium-8 small-8 cell">
       <label class="btn btn-default">
         <input type="file" id="file" ref="file" v-on:change="(e)=>handleFileUpload(e)"/>
