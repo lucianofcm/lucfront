@@ -60,6 +60,7 @@ import axios from 'axios'
         Handles a change on the file upload
       */
       handleFileUpload(e: any){
+        console.log('teste novamente' + e);
         console.log(e.target.files[0]);
       }
     }
