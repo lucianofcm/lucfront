@@ -17,7 +17,8 @@ import axios from 'axios'
     */
     data(){
       return {
-        file: ''
+        file: '',
+        nameFile:''
       }
     },
     methods: {
@@ -34,17 +35,19 @@ import axios from 'axios'
             /*
                 Add the form data we need to submit
             */
-            formData.append('file', this.file);
+            formData.append('file', this.file,this.nameFile);
+            formData.append('pastaDestino', 'RECIBOS');
 
         /*
           Make the request to the POST /single-file URL
 
         */
-            axios.post( '/single-file',
+            axios.post( 'https://lucwebapp.herokuapp.com/drive/upload',
                 formData,
                 {
                 headers: {
-                    'Content-Type': 'multipart/form-data'
+                    'Content-Type': 'multipart/form-data',
+                    'Access-Control-Allow-Origin': '*'
                 }
               }
             ).then(function(){
@@ -59,8 +62,8 @@ import axios from 'axios'
         Handles a change on the file upload
       */
       handleFileUpload(e: any){
-        console.log('teste novamente' + e);
-        console.log(e.target.files[0]);
+        this.file = e.target.files[0];
+        this.nameFile =  e.target.files[0].name
       }
     }
   }
