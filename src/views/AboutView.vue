@@ -4,8 +4,8 @@
       <strong>Sucesso</strong> Arquivo enviado com sucesso.
     </div>
 
-    <div class="card">
-      <div class="large-8 medium-8 small-8 cell">
+    <div class="card" style="width: 480px; background-color: white; padding-right: 50px;">
+      <div class="large-12 medium-12 small-12 cell">
         <label class="btn btn-default">
           <input type="file" id="file" ref="file" v-on:change="(e) => handleFileUpload(e)" />
         </label>
