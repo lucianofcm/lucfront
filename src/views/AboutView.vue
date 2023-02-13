@@ -78,7 +78,6 @@ export default {
     handleFileUpload(e: any) {
       this.file = e.target.files[0];
       this.nameFile = e.target.files[0].name
-      .target.files[0].name = 'teste'
     }
   }
 }
