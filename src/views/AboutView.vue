@@ -1,18 +1,20 @@
 <template>
   <div class="container-fluid">
     <div class="row">
+    <div class="col-sm-8">
     <div class="alert alert-success" v-if="sucesso">
       <strong>Sucesso</strong> Arquivo enviado com sucesso.
     </div>
 
-    <div class="card" style="width: 400px; background-color: white;">
-      <div class="mb-3">
+    <div class="card" style=" background-color: white;">
+      <div>
         <label for="file" class="form-label"></label>
           <input type="file" id="file" class="form-control"  ref="file" v-on:change="(e) => handleFileUpload(e)" />
       </div>
-      <div class="col-xs-4 text-center">
+      <div class="text-center">
         <button class="btn btn-success" v-on:click="submitFile()">Enviar</button>
       </div>
+    </div>
     </div>
   </div>
 </div>
