@@ -1,5 +1,6 @@
 <template>
   <div class="container-fluid">
+    <div class="row">
     <div class="alert alert-success" v-if="sucesso">
       <strong>Sucesso</strong> Arquivo enviado com sucesso.
     </div>
@@ -14,6 +15,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script lang="ts">
