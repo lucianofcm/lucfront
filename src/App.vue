@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="wrapper">
     </div>
   </header>
-  <div  class="h-50 " style="width: 430px; background-color: white; padding-right: 50px;">
+  <div style="width: 350px; background-color: white;">
   <RouterView />
   </div>
 </template>
