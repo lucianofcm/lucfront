@@ -66,7 +66,7 @@ export default {
 
       try {
         const response = await axios
-          .post("http://localhost:8080/drive/upload", formData, {
+          .post("https://lucapp.netlify.app/drive/upload", formData, {
             headers: {
               "Content-Type": "multipart/form-data",
               "Access-Control-Allow-Origin": "*",
@@ -104,7 +104,7 @@ export default {
     },
     async criarPasta(pasta: any) {
       await axios
-        .get('http://localhost:8080/drive/pasta/' + this.nomeArquivo)
+        .get('https://lucapp.netlify.app/drive/pasta/' + this.nomeArquivo)
         .then(response => {
           this.arquivoCriado = response.data
         })
